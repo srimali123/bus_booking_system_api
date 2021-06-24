@@ -22,7 +22,7 @@ use App\Http\Controllers\RoutesTableController;
 |
 */
 //Routes for routes_table
-Route::post('/routes_table/add', [RoutesTableController::class,'store']);
+Route::post('/routes_table', [RoutesTableController::class,'store']);
 
 Route::get('/routes_table_data', [RoutesTableController::class,'show'] );
 
@@ -37,7 +37,7 @@ Route::delete('/routes_table_data/{id}/delete',[RoutesTableController::class,'de
 
 //Routes for bus_routes table
 
-Route::post('/bus_routes/add', [bus_routesController::class,'store']);
+Route::post('/bus_routes', [bus_routesController::class,'store']);
 
 Route::get('/bus_routes_data', [bus_routesController::class,'show'] );
 
@@ -48,7 +48,7 @@ Route::put('/bus_routes_data/{id}/update',[bus_routesController::class,'update']
 Route::delete('/bus_routes_data/{id}/delete',[bus_routesController::class,'destroy']);
 
 //Routes for bus_detail table
-Route::post('/bus_detail/add', [bus_detailController::class,'store']);
+Route::post('/bus_detail', [bus_detailController::class,'store']);
 
 Route::get('/bus_detail_data', [bus_detailController::class,'show'] );
 
@@ -59,7 +59,7 @@ Route::put('/bus_detail_data/{id}/update',[bus_detailController::class,'update']
 Route::delete('/bus_detail_data/{id}/delete',[bus_detailController::class,'destroy']);
 
 //Routes for bus_detail table
-Route::post('/bus_seates/add', [bus_seatesController::class,'store']);
+Route::post('/bus_seates', [bus_seatesController::class,'store']);
 
 Route::get('/bus_seates_data', [bus_seatesController::class,'show'] );
 
@@ -71,7 +71,7 @@ Route::delete('/bus_seates_data/{id}/delete',[bus_seatesController::class,'destr
 
 
 //Routes for bus_schedule table
-Route::post('/bus_schedules/add', [bus_schedulesController::class,'store']);
+Route::post('/bus_schedules', [bus_schedulesController::class,'store']);
 
 Route::get('/bus_schedules_data', [bus_schedulesController::class,'show'] );
 
@@ -83,7 +83,7 @@ Route::delete('/bus_schedules_data/{id}/delete',[bus_schedulesController::class,
 
 //Routes for bus_schedule_bookings table
 
-Route::post('/bus_schedule_bookings/add', [bus_schedule_bookingsController::class,'store']);
+Route::post('/bus_schedule_bookings', [bus_schedule_bookingsController::class,'store']);
 
 Route::get('/bus_schedule_bookings_data', [bus_schedule_bookingsController::class,'show'] );
 
